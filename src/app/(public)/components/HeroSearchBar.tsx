@@ -18,7 +18,7 @@ export default function SearchBar() {
       {/* Search icon */}
       <svg
         aria-hidden="true"
-        className="h-5 w-5 shrink-0 text-white/40"
+        className="h-5 w-5 shrink-0 text-black/40"
         fill="none"
         stroke="currentColor"
         strokeWidth={2}

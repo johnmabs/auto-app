@@ -19,9 +19,9 @@ import {
 } from "@/constants/vehicles";
 import { Button } from "@/components/ui/Button";
 import { cn } from "@/lib/utils";
-import Field from "../../nouveau/Field";
-import FeaturesInput from "../../nouveau/FeaturesInput";
-import ImageUploadArea from "../../nouveau/ImageUploadArea";
+import Field from "../../new/Field";
+import FeaturesInput from "../../new/FeaturesInput";
+import ImageUploadArea from "../../new/ImageUploadArea";
 
 type EditVehicleState = {
   make: string;

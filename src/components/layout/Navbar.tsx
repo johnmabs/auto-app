@@ -5,9 +5,8 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
-
 import Logo from "./Logo";
-import { WhatsAppButton } from "@/components/shared/WhatsAppButton";
+import { COMPANY_INFO } from "@/constants/company";
 
 /* ── Nav links ───────────────────────────────────────────── */
 const NAV_LINKS = [
@@ -103,7 +102,17 @@ export function Navbar() {
 
               {/* Right actions */}
               <div className="hidden lg:flex items-center gap-3 ml-auto">
-                <WhatsAppButton />
+		<a href={`https://wa.me/${COMPANY_INFO.whatsapp.replace(/\D/g, "")}?text=Bonjour+Autostore+!+Je+souhaite+des+informations.`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={cn(
+              "shrink-0 inline-flex items-center gap-2 px-5 py-2.5 rounded-(--r)",
+              "bg-[#25D366] text-white text-[0.8rem] font-medium uppercase tracking-wider",
+              "hover:bg-[#1ebe5c] transition-colors",
+            )}
+          >
+            Ouvrir WhatsApp
+          </a>
               </div>
 
               {/* Mobile hamburger */}
@@ -171,7 +180,17 @@ export function Navbar() {
         </nav>
 
         <div className="mt-auto p-6 border-t border-(--border) space-y-3">
-          <WhatsAppButton />
+          <a href={`https://wa.me/${COMPANY_INFO.whatsapp.replace(/\D/g, "")}?text=Bonjour+Autostore+!+Je+souhaite+des+informations.`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={cn(
+              "shrink-0 inline-flex items-center gap-2 px-5 py-2.5 rounded-(--r)",
+              "bg-[#25D366] text-white text-[0.8rem] font-medium uppercase tracking-wider",
+              "hover:bg-[#1ebe5c] transition-colors",
+            )}
+          >
+            Ouvrir WhatsApp
+          </a>
         </div>
       </div>
 

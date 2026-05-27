@@ -113,7 +113,8 @@ export default function RootLayout({
         ${dmSans.variable} 
         ${dmMono.variable} 
         ${bebasNeue.variable} 
-        ${playfairDisplay.variable}  
+        ${playfairDisplay.variable}
+        light
         antialiased`}
       suppressHydrationWarning
     >
